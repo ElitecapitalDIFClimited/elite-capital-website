@@ -14,6 +14,7 @@ import {
 } from "@/lib/json-ld";
 
 import CookieBanner from "@/components/Common/CookieBanner";
+import { Analytics } from "@vercel/analytics/next";
 
 const bodoni_moda = Bodoni_Moda({
   subsets: ["latin"],
@@ -109,6 +110,8 @@ const App = ({ Component, pageProps }) => {
           </AnimatePresence>
         </LazyMotion>
       </ReactLenis>
+
+      <Analytics/>
     </>
   );
 };
