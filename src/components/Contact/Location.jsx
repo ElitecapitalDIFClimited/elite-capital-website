@@ -28,6 +28,7 @@ const Location = () => {
     const handleMouseLeave = () => {
         setOffset({ x: 0, y: 0 });
     };
+
     return (
         <section className="relative h-fit bg-[#747977] py-[3vw] overflow-hidden mobile:py-[15vw] mobile:min-h-full mobile:h-full tablet:h-full tablet:py-[7%]" id="location">
             <div className="relative z-10 px-[5vw]  flex items-center justify-between h-screen mobile:flex-col-reverse mobile:gap-[10vw] mobile:h-full tablet:h-full tablet:flex-col-reverse tablet:gap-[7vw]">
@@ -89,7 +90,7 @@ const Location = () => {
                             <div className="">
                                 <Image src="/icons/phone-icon.svg" height={35} width={35} alt="phone" className="fadein" />
                             </div>
-                            <div dir="ltr" className="flex gap-2 mt-2 items-center after:absolute w-fit relative after:bottom-1 after:w-full after:h-[1.5px] after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out ">
+                            <div dir="ltr" className="flex gap-2 rtl:mt-2 items-center after:absolute w-fit relative after:bottom-1 after:w-full after:h-[1.5px] after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out ">
                                 <p className="w-full content mobile:pl-[3vw] tablet:w-full fadein ">{t('phone')}</p>
                             </div>
                         </div>
@@ -97,7 +98,7 @@ const Location = () => {
                             <div className="">
                                 <Image src="/icons/mail-icon.svg" height={35} width={35} alt="mail" className="fadein" />
                             </div>
-                            <div dir="ltr" className="flex gap-2 mt-2 items-center after:absolute w-fit relative after:bottom-1 after:w-full after:h-[1.5px] after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out ">
+                            <div dir="ltr" className="flex gap-2 rtl:mt-2 items-center after:absolute w-fit relative after:bottom-1 after:w-full after:h-[1.5px] after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out ">
                                 <p className="w-full content mobile:pl-[3vw] tablet:w-full fadein">{t('mail')}</p>
                             </div>
                         </div>
@@ -106,7 +107,7 @@ const Location = () => {
                                 <div className="">
                                     <Image src="/icons/contact-linkedin.svg" height={24} width={24} alt="mail" className="fadein mobile:h-[7vw] mobile:w-[7vw] mobile:pl-[1.5vw]" />
                                 </div>
-                                <div className="flex gap-2 mt-2 items-center after:absolute w-fit relative after:bottom-1 after:w-full after:h-[1.5px] after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out ">
+                                <div className="flex gap-2 rtl:mt-2 items-center after:absolute w-fit relative after:bottom-1 after:w-full after:h-[1.5px] after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out ">
                                     <p className="w-full content mobile:pl-[3.5vw] tablet:w-full fadein">Elite Capital</p>
                                 </div>
                             </div>
@@ -116,7 +117,7 @@ const Location = () => {
                                 <div className="">
                                     <Image src="/icons/contact-instagram.svg" height={35} width={35} alt="mail" className="fadein mobile:h-[8vw] mobile:w-[8vw] " />
                                 </div>
-                                <div className="flex gap-2 mt-2 items-center after:absolute w-fit relative after:bottom-1 after:w-full after:h-[1.5px] after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out ">
+                                <div className="flex gap-2 rtl:mt-2 items-center after:absolute w-fit relative after:bottom-1 after:w-full after:h-[1.5px] after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out ">
                                     <p className="w-full content mobile:pl-[3.5vw] tablet:w-full fadein">Elite Capital</p>
                                 </div>
                             </div>
