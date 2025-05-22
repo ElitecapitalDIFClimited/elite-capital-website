@@ -105,10 +105,10 @@ const Location = () => {
                         <Link href={t('linkedin')} className="">
                             <div className="flex items-center justify-start gap-[1.4vw] py-[0.5vw] group cursor-pointer mobile:py-[1.5vw] pl-[0.3vw] rtl:pr-[0.4vw] tablet:pb-[2vw] tablet:gap-[3vw] mobile:pl-0">
                                 <div className="">
-                                    <Image src="/icons/contact-linkedin.svg" height={24} width={24} alt="mail" className="fadein mobile:h-[7vw] mobile:w-[7vw] mobile:pl-[1.5vw]" />
+                                    <Image src="/icons/contact-linkedin.svg" height={25} width={25} alt="mail" className="fadein mobile:h-[7vw] mobile:w-[7vw] mobile:pl-[1.5vw]" />
                                 </div>
                                 <div className="flex gap-2 rtl:mt-2 items-center after:absolute w-fit relative after:bottom-1 after:w-full after:h-[1.5px] after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out ">
-                                    <p className="w-full content mobile:pl-[3.4vw] tablet:w-full fadein">Elite Capital</p>
+                                    <p className="w-full content mobile:pl-[3.6vw] tablet:w-full fadein">Elite Capital</p>
                                 </div>
                             </div>
                         </Link>
@@ -118,7 +118,7 @@ const Location = () => {
                                     <Image src="/icons/contact-instagram.svg" height={35} width={35} alt="mail" className="fadein mobile:h-[8vw] mobile:w-[8vw] " />
                                 </div>
                                 <div className="flex gap-2 rtl:mt-2 items-center after:absolute w-fit relative after:bottom-1 after:w-full after:h-[1.5px] after:bg-white after:scale-x-0 group-hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out ">
-                                    <p className="w-full content mobile:pl-[2.8vw] tablet:w-full fadein">Elite Capital</p>
+                                    <p className="w-full content mobile:pl-[3.1vw] tablet:w-full fadein">Elite Capital</p>
                                 </div>
                             </div>
                         </Link>
