@@ -15,8 +15,8 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: "Required fields missing" });
     }
     const { data, error } = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: ["info@elitecapitalinvestments.com"],
+      from: "Elite Capital <webforms@elitecapitalinvestments.com>",
+      to: ["harshgoyalrss7@gmail.com"],
       subject: "New Contact Form Submission",
       react: ContactDetails({
         userName: name,
