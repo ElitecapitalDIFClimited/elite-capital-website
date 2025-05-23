@@ -6,6 +6,7 @@ import {
   Head,
   Hr,
   Html,
+  link,
   Img,
   Link,
   Preview,
@@ -21,6 +22,7 @@ const ContactDetails = ({
   userNumber,
   userMessage,
   userDesignation,
+  pageURL
 }) => {
   return (
     <Html>
@@ -30,15 +32,6 @@ const ContactDetails = ({
       </Preview>
       <Body style={main}>
         <Container style={container}>
-          <Img
-            src={
-              "https://elite-capital-website.vercel.app/icons/elite-full-logo.png"
-            }
-            width="70"
-            height="50"
-            alt="Logo"
-            style={logo}
-          />
           <Text style={paragraph}>Hi,</Text>
           <Text style={paragraph}>
             You have a new contact form submission on the Elite Capital Website.
@@ -80,7 +73,7 @@ const ContactDetails = ({
               <Column style={columnText}>{userMessage}</Column>
             </Row>
           </Section>
-          <Text style={footer}>This form is submitted from</Text>
+          <Text style={footer}>This form is submitted from <Link style={link} href={pageURL}>{pageURL}</Link></Text>
           <Text style={paragraph}>- Team Elite Capital</Text>
           <Hr style={hr} />
           <Text style={footer}>

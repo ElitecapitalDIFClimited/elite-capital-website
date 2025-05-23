@@ -29,6 +29,7 @@ const formSchema = z.object({
   terms: z
     .boolean()
     .refine((val) => val, { message: "You must agree to terms." }),
+    pageURL: z.string()
 });
 
 export default function ContactForm() {
@@ -42,6 +43,7 @@ export default function ContactForm() {
       designation: "",
       message: "",
       terms: false,
+      pageURL: typeof window !== 'undefined' ? window.location.href : '',
     },
   });
 
@@ -50,7 +52,6 @@ export default function ContactForm() {
 
   const onSubmit = async (data) => {
     setIsLoading(true);
-    console.log("Form Submitted:", data);
 
     const formData = {
       name: data.name,
@@ -59,6 +60,7 @@ export default function ContactForm() {
       message: data.message,
       companyName: data.company,
       designation: data.designation,
+      pageURL: typeof window !== 'undefined' ? window.location.href : '',
     };
 
     try {
@@ -261,21 +263,9 @@ export default function ContactForm() {
                   )}
                 </Button>
               </div>
-              <FormField
-                control={form.control}
-                name="terms"
-                render={({ field }) => (
-                  <FormItem className="">
-                    <div className="flex gap-[1vw] items-start mobile:gap-[5vw] tablet:gap-[1.5vw]">
-                      <FormLabel
-                        htmlFor="terms"
-                        className="text-[1.2vw] mobile:text-[4.5vw] tablet:text-[2vw] w-[90%] mt-[-0.5vw]"
-                        dangerouslySetInnerHTML={{ __html: t("formPrivacy") }}
-                      />
-                    </div>
-                    <FormMessage />
-                  </FormItem>
-                )}
+              <div 
+                className="flex gap-[1vw] items-start mobile:gap-[5vw] tablet:gap-[1.5vw] text-[1.2vw] mobile:text-[4.5vw] tablet:text-[2vw] w-[90%] mt-[-0.5vw]" 
+                dangerouslySetInnerHTML={{ __html: t("formPrivacy") }} 
               />
             </form>
           </Form>
