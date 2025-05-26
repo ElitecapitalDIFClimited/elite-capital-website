@@ -45,8 +45,7 @@ const App = ({ Component, pageProps }) => {
   const { locale } = useRouter();
   const router = useRouter();
   const [cookieVisible, setVisible] = useState(true);
-
-
+  
   useEffect(() => {
     const dir = locale === "ar" ? "rtl" : "ltr";
     document.documentElement.setAttribute("dir", dir);

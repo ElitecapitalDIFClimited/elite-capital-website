@@ -9,7 +9,7 @@ import { useTranslation } from "next-i18next";
 const socials = [
   {
     icon: "/icons/linkedin.svg",
-    link: "https://www.linkedin.com/yourlinkedinpage",
+    link: "https://www.linkedin.com/company/officialelitecapital",
     alt: "LinkedIn Icon",
   },
   {
