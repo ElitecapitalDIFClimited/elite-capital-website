@@ -1,19 +1,21 @@
 import { fadeIn, fadeUp, lineAnim, paraAnim, titleAnim } from "@/components/gsapAnimations";
 import About from "@/components/Homepage/About";
 import Advantage from "@/components/Homepage/Advantage";
-import Assets from "@/components/Homepage/Assets";
 import Diversify from "@/components/Homepage/Diversify";
 import Portfolio from "@/components/Homepage/Portfolio";
-import Values from "@/components/Homepage/Values";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import heroBg from "../../public/assets/images/homepage/hero-bg.jpg"
 import { useTranslation } from "next-i18next";
-import Contact from "@/components/Common/Contact";
 import Layout from "@/components/Common/Layout";
-import Hero from "@/components/Homepage/Hero";
 import Metadata from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
-import Counter from "@/components/Homepage/Counter";
+import dynamic from "next/dynamic";
+
+const Hero = dynamic(() => import("@/components/Homepage/Hero"));
+const Assets = dynamic(() => import("@/components/Homepage/Assets"));
+const Values = dynamic(() => import("@/components/Homepage/Values"));
+const Contact = dynamic(() => import("@/components/Common/Contact"));
+const Counter = dynamic(() => import("@/components/Homepage/Counter"));
 
 export default function Home() {
 
