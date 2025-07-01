@@ -20,20 +20,29 @@ const socials = [
 ];
 
 const LanguageButton = ({ className = "" }) => {
-  const { locale, asPath } = useRouter();
+  const { locale, asPath, pathname } = useRouter()
+  // If you’re on /ar/about-us, strip the leading “/ar”
+  const basePath = locale === 'ar'
+    ? (asPath || pathname).replace(/^\/ar/, '')
+    : (asPath || pathname)
 
   return (
-    <div className={`text-white flex items-center gap-x-2 text-[1.2vw] tablet:text-[3vw] mobile:text-[5vw] ${className}`}>
-      <a className={`${locale === 'en' ? 'text-golden font-bold text-[1.5vw] mobile:text-black tablet:text-black tablet:text-[4vw] mobile:text-[5vw]' : 'mobile:text-black tablet:text-black'} hover:scale-110 block duration-150`} href={asPath} locale="en">
+   <div className={`text-white relative flex items-center h-full gap-x-2 justify-center text-[1.2vw] tablet:text-[3vw] mobile:text-[5vw] ${className}`}>
+      {/* English Link */}
+      <a href={basePath} locale="en" className={`${locale === 'en' ? 'text-golden font-bold  tablet:text-black tablet:text-[4vw] mobile:text-[5vw] underline' : 'mobile:text-black tablet:text-black'} hover:scale-110 block duration-150 rtl:pt-[0.1vw]`}>
         EN
       </a>
-      <span className={`bg-white w-[1px] block h-[1.5vw] mobile:bg-black tablet:bg-black tablet:h-[5vw]`}></span>
-      <a className={`${locale === 'ar' ? 'text-golden font-bold text-[1.5vw] mobile:text-black tablet:text-black tablet:text-[4vw] mobile:text-[5vw]' : 'mobile:text-black tablet:text-black'} hover:scale-110 block duration-150`} href={`ar${asPath}`} locale="ar">
+
+      {/* Divider */}
+      <span className="bg-white w-[1px] block h-[1vw] mobile:bg-black mobile:h-[6vw] tablet:bg-black tablet:h-[5vw] rtl:h-[0.9vw] rtl:mobile:h-[6vw] rtl:mt-[-0.2vw]"></span>
+
+      {/* Arabic Link */}
+      <a href={`/ar${basePath}`} locale="ar" className={`${locale === 'ar' ? '!text-golden font-bold tablet:text-[4vw] mobile:text-[5vw] underline' : 'mobile:text-black tablet:text-black '} hover:scale-110 block duration-150 rtl:pt-[0.1vw]'} `}>
         AR
       </a>
     </div>
   )
-};
+}
 
 const Header = () => {
   const headerRef = useRef();
@@ -121,7 +130,7 @@ const Header = () => {
           </Link>
         </div>
 
-        <div className="flex gap-[2vw] mobile:hidden tablet:hidden">
+        <div className="flex gap-[4vw] mobile:hidden tablet:hidden">
           <div className={`flex flex-nowrap justify-end text-white gap-[2vw]`}>
             <Link href="/" className={`menu-link text-[1.2vw] group`} prefetch={false}>
               <div className={`flex gap-2 items-center after:absolute relative after:bottom-0 after:w-[calc(100%+0.2rem)] after:h-[1.5px]  after:scale-x-0 group-hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out after:bg-current`}>
@@ -140,7 +149,7 @@ const Header = () => {
               </Link>
             ))}
           </div>
-          {/* <LanguageButton className="mobile:hidden tablet:hidden" /> */}
+          <LanguageButton className="" />
         </div>
 
         <div className="hidden mobile:block tablet:block">
@@ -208,9 +217,10 @@ const Header = () => {
                   </a>
                 ))}
               </div>
-              {/* <div className="w-full flex justify-end">
-                <LanguageButton />
-              </div> */}
+              <div className="w-full flex justify-end">
+              <LanguageButton className="" />
+
+              </div>
               <div
                 className="absolute right-[-2%] top-[8%] border rounded-full border-black p-[3vw] rtl:left-[2%] rtl:right-auto"
                 onClick={closeMenuMobile}

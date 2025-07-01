@@ -45,7 +45,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className=" bg-transparent h-[38vw] text-white   mobile:h-full tablet:h-[70vw]"
+    <footer className="bg-transparent h-[65vh] text-white mobile:h-full tablet:h-[70vw]"
       style={{
         ...(mobileWidth
           ? {}
@@ -76,11 +76,11 @@ const Footer = () => {
           </div>
           <div className="h-fit w-[40%] py-[3vw] mobile:w-full mobile:py-[8vw] tablet:py-[4vw]">
             <div className="text-white text-[1.15rem]">
-              <p>Elite Capital Head Office</p>
-              <p>Central Park Towers, Office 02-40</p>
-              <p>Dubai International Financial Centre</p>
-              <p>PO Box 507417</p>
-              <p>Dubai, United Arab Emirates</p>
+              <p>{t('address1')}</p>
+              <p>{t('address2')}</p>
+              <p>{t('address3')}</p>
+              <p>{t('address4')}</p>
+              <p>{t('address5')}</p>
             </div>
           </div>
           <div className="border-t border-white flex justify-between items-center py-6 mobile:flex-col-reverse mobile:items-start mobile:gap-[1vw]  tablet:pb-[5vw] mobile:pt-[5vw] mobile:py-[2vw]">
@@ -126,7 +126,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="py-[1.5vw] mobile:mt-[-2vw] bg-[#121212] w-full flex items-center justify-center italic font-body text-[1.15rem]  mobile:px-[5vw] mobile:py-[5vw] mobile:text-[3.5vw] tablet:px-[5vw]">Regulated by the DFSA under F009439. Elite Capital (DIFC) Limited only provides financial services to professional clients</div>
+        <div className="py-[1.5vw] mobile:mt-[-2vw] bg-[#121212] w-full flex items-center justify-center italic font-body text-[1.15rem]  mobile:px-[5vw] mobile:py-[5vw] mobile:text-[3.5vw] tablet:px-[5vw]">Regulated by the DFSA under F009439. Elite Capital (DIFC) Limited only provides financial services to professional clients.</div>
       </div>
     </footer>
   );
