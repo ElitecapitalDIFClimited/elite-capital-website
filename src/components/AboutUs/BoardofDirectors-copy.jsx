@@ -118,7 +118,7 @@ const MobileSwiper = ({ members }) => {
 
         return (
           <SwiperSlide key={index}>
-            <div className="h-full flex gap-[5vw] mobile:w-full transition-transform hover:scale-[1.02] tablet:w-[70vw] tablet:h-[180vw] w-full px-[5vw] py-[10vw] bg-[#BCBCBC] mobile:flex-col mobile:items-center mobile:h-full tablet:flex-col">
+            <div className="h-full flex gap-[5vw] mobile:w-full transition-transform hover:scale-[1.02] tablet:w-[70vw] tablet:h-[180vw] w-full px-[5vw] py-[10vw] bg-[#BCBCBC] mobile:flex-col mobile:items-center mobile:min-h-[120vh]  tablet:flex-col">
               {/* Image */}
               <div className="h-[28vw] w-[22vw] mobile:w-[80vw] mobile:ml-[-10vw] mobile:h-[90vw] overflow-hidden group transition-all duration-500 ease rounded-[2vw] tablet:w-[50vw] tablet:h-[50vw] rtl:mobile:ml-[10vw]">
                 <Image

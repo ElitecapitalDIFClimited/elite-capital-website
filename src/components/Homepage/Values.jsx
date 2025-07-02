@@ -55,7 +55,7 @@ const Values = () => {
 
   return (
     <section className="h-[75vw] w-screen relative pb-[8vw] pt-[5vw]  mobile:pt-0 overflow-hidden mobile:h-full mobile:flex-col mobile:flex tablet:h-full tablet:pt-0 dark mobile:pb-[10vw]" id="values">
-      <div className="absolute top-0 left-0 h-full w-full z-0 mobile:relative mobile:h-[60vh] tablet:relative tablet:h-[50vw] values-block ">
+      <div className="absolute top-0 left-0 h-full w-full z-0 mobile:relative mobile:h-[60vh] tablet:relative tablet:h-[80vw] values-block ">
         <Image
           src={valuesBg}
           alt="stats-bg"
