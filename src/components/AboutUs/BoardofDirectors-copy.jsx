@@ -143,7 +143,7 @@ const MobileSwiper = ({ members }) => {
                   {firstHalf.map((feature, i) => (
                     <p
                       key={i}
-                      className="text-[1.3vw] tablet:text-[2.5vw]  mobile:text-[4.1vw]"
+                      className="text-[1.3vw] tablet:text-[2.5vw] text-justify  mobile:text-[4.1vw]"
                     >
                       {feature}
                     </p>
@@ -154,7 +154,7 @@ const MobileSwiper = ({ members }) => {
                     {secondHalf.map((feature, i) => (
                       <p
                         key={i}
-                        className="text-[1.3vw] leading-[1.5] tablet:text-[2.5vw]  mobile:text-[4.1vw]"
+                        className="text-[1.3vw] leading-[1.5] tablet:text-[2.5vw] text-justify  mobile:text-[4.1vw]"
                       >
                         {feature}
                       </p>
@@ -169,11 +169,11 @@ const MobileSwiper = ({ members }) => {
                     className="text-[1.3vw] mt-[2vw] tablet:text-[2.5vw] font-normal cursor-pointer mobile:pt-[5vw]"
                   >
                     {openedIndex === index ? (
-                      <p className="after:absolute relative after:left-0 after:bottom-0 after:w-[calc(25%-1rem)] after:h-[1.5px]  mobile:text-[3.5vw] after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out rtl:after:w-[calc(25%+1rem)] rtl:after:right-0">
+                      <p className="after:absolute relative after:left-0 after:bottom-0 after:w-[calc(25%-1rem)] after:h-[1.5px]  mobile:text-[3.5vw] after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out rtl:after:w-[calc(25%-2.5rem)] rtl:after:right-0">
                         {t('readLess')}
                       </p>
                     ) : (
-                      <p className="after:absolute relative after:left-0 after:bottom-0 after:w-[calc(25%-1rem)] after:h-[1.5px]  mobile:text-[3.5vw] after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out rtl:after:w-[calc(25%+1rem)] rtl:after:right-0">
+                      <p className="after:absolute relative after:left-0 after:bottom-0 after:w-[calc(25%-1rem)] after:h-[1.5px]  mobile:text-[3.5vw] after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transition-all after:duration-300 after:ease-in-out rtl:after:w-[calc(25%-1rem)] rtl:after:right-0">
                         {t('readMore')}
                       </p>
                     )}
@@ -227,11 +227,11 @@ const TeamAccordion = ({ members }) => {
               <p className="text-[2.5vw] leading-[1.2] font-display mobile:text-[8vw] tablet:text-[5vw]">
                 {item.name}
               </p>
-              <p className="mobile:text-[4.6vw] tablet:text-[3vw] w-full leading-[1.2] tablet:w-full">
+              <p className="mobile:text-[4.6vw]  tablet:text-[3vw] w-full leading-[1.2] tablet:w-full">
                 {item.des}
               </p>
 
-              <div className="space-y-[1vw] pt-[1vw]">
+              <div className="space-y-[1vw] pt-[1vw] text-justify">
                 {firstHalf.map((feature, i) => (
                   <p
                     key={i}
@@ -242,11 +242,11 @@ const TeamAccordion = ({ members }) => {
                 ))}
               </div>
 
-              <AccordionContent className="space-y-[1vw] pt-[1vw]">
+              <AccordionContent className="space-y-[1vw] pt-[1vw] ">
                 {secondHalf.map((feature, i) => (
                   <p
                     key={i}
-                    className="text-[1.3vw] leading-[1.5] tablet:text-[2.5vw]"
+                    className="text-[1.3vw] text-justify leading-[1.5] tablet:text-[2.5vw]"
                   >
                     {feature}
                   </p>

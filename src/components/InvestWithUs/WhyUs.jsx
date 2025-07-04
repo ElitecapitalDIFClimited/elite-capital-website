@@ -128,7 +128,7 @@ const WhyUS = () => {
                     <p className="text-[2.2vw] !leading-[1.2] font-body ltr:font-display">
                       {item.title}
                     </p>
-                    <p>{item.para}</p>
+                    <p className="text-justify w-[80%]">{item.para}</p>
                     <div
                       className="rounded-full border p-3 absolute top-5 right-5 z-[20] h-[3vw] w-[3vw] flex items-center border-white justify-end cursor-pointer"
                       onClick={handleClose}
@@ -241,7 +241,7 @@ const WhyUS = () => {
                 <p className="text-[6.2vw] !leading-[1.2] !font-display tablet:text-[6vw]">
                   {item.title}
                 </p>
-                <p className="text-[4.1vw] tablet:text-[3vw]">{item.para}</p>
+                <p className="text-[4.1vw] tablet:text-[3vw] mobile:text-justify">{item.para}</p>
               </div>
             ))}
           </div>

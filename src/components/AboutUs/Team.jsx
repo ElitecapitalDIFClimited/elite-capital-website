@@ -36,12 +36,12 @@ const Team = () => {
                       className={`object-contain w-full h-full group-hover:scale-[0.95] transition-all duration-500 ease`}
                     />
                   </div>
-                  <div className="mobile:space-y-[2vw] flex flex-col mobile:gap-[4vw] absolute bottom-0 h-[30vw] mobile:h-[100vw] group-hover:translate-y-[0%] translate-y-[70%] transition-all duration-500 ease-in-out  rounded-tl-[0.5vw] rounded-tr-[0.5vw] w-full px-[1vw] pt-[1vw] bg-[#F2F2E9] left-0 mobile:pt-[3vw] mobile:translate-y-[75%] mobile:rounded-tl-[2.5vw] mobile:rounded-tr-[2.5vw] mobile:px-[5vw] tablet:h-[60vw] tablet:translate-y-[75%]">
-                    <div className="h-fit space-y-2">
-                      <p className="text-[2.5vw] leading-[1.2] font-display mobile:text-[8vw] tablet:text-[4.5vw]">
+                  <div className="mobile:space-y-[2vw] flex flex-col mobile:gap-[4vw] absolute bottom-0 h-[30vw] mobile:h-[100vw] group-hover:translate-y-[0%] translate-y-[70%] transition-all duration-500 ease-in-out  rounded-tl-[0.5vw] rounded-tr-[0.5vw] w-full px-[1vw] pt-[1vw] bg-[#F2F2E9] left-0 mobile:pt-[2vw] mobile:translate-y-[75%] mobile:rounded-tl-[2.5vw] mobile:rounded-tr-[2.5vw] mobile:px-[5vw] tablet:h-[60vw] tablet:translate-y-[75%]">
+                    <div className="h-fit space-y-2 mobile:space-y-[1vw]">
+                      <p className="text-[2.5vw] leading-[1.2] font-display mobile:text-[7.8vw] tablet:text-[4.5vw]">
                         {item.name}
                       </p>
-                      <p className="h-[5vw] mobile:text-[3.8vw] tablet:text-[2.5vw] text-[1.4vw] mobile:h-fit">
+                      <p className="h-[5vw] text-justify mobile:text-[3.8vw] tablet:text-[2.5vw] text-[1.4vw] mobile:h-fit ">
                         {item.des}
                       </p>
                     </div>
@@ -59,7 +59,7 @@ const Team = () => {
                                 "polygon(0 0, 100% 0%, 70% 100%, 0% 100%)",
                             }}
                           ></span>
-                          <p className="text-[1.2vw] w-[80%] mobile:text-[3.5vw] tablet:text-[2vw] mobile:leading-[1.6]">
+                          <p className="text-[1.2vw] w-[80%] text-justify mobile:text-[3.5vw] tablet:text-[2vw] mobile:leading-[1.6]">
                             {list}
                           </p>
                         </div>

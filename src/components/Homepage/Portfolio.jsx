@@ -159,7 +159,7 @@ export default function SwiperSlider() {
         <h2 className="slide__heading text-[4.5vw] font-display leading-[1.2] mb-[1.5vw] mobile:text-[10vw] mobile:mb-6 tablet:text-[7vw]">
           {t("portfolioHead")}
         </h2>
-        <p className="slide__text  mobile:text-[4.1vw] w-[50%] mobile:w-full mobile:tracking-wider tablet:text-[2.5vw]">
+        <p className="slide__text text-justify   mobile:text-[4.1vw] w-[40%] mobile:w-[80%] mobile:tracking-wider tablet:text-[2.5vw]">
           {t("portfolioSub")}
         </p>
       </div>
@@ -183,7 +183,7 @@ export default function SwiperSlider() {
       <div
         ref={buttonRef}
         onMouseMove={(e) => handleMouseMove(e)}
-        className="absolute z-[5] bottom-[25%] ltr:left-[10%] rtl:right-[5%] w-[3.5vw] h-[3.5vw] mobile:w-[14vw] mobile:h-[12vw] tablet:w-[7vw] tablet:h-[7vw] overflow-hidden group rounded-full next-button cursor-pointer border border-white transition-colors duration-500 mobile:bottom-[20%] mobile:ltr:left-[20%] rtl:mobile:right-[5%] tablet:bottom-[20%] tablet:ltr:left-[15%] tablet:rtl:right-[20%] "
+        className="absolute z-[5] bottom-[25%] ltr:left-[10%] rtl:right-[5%] w-[3.5vw] h-[3.5vw] mobile:w-[12vw] mobile:h-[12vw] tablet:w-[7vw] tablet:h-[7vw] overflow-hidden group rounded-full next-button cursor-pointer border border-white transition-colors duration-500 mobile:bottom-[20%] mobile:ltr:left-[20%] rtl:mobile:right-[5%] tablet:bottom-[20%] tablet:ltr:left-[15%] tablet:rtl:right-[20%] "
         onClick={handleNext}
       >
         <span

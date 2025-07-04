@@ -74,13 +74,13 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="h-fit w-[40%] py-[3vw] mobile:w-full mobile:py-[8vw] tablet:py-[4vw]">
+          <div className="h-fit w-[50%] py-[3vw] mobile:w-full mobile:py-[8vw] tablet:py-[4vw]">
             <div className="text-white text-[1.15rem]">
-              <p>{t('address1')}</p>
-              <p>{t('address2')}</p>
-              <p>{t('address3')}</p>
-              <p>{t('address4')}</p>
-              <p>{t('address5')}</p>
+              <p className="text-justify">{t('address1')}</p>
+              <p className="text-justify">{t('address2')}</p>
+              <p className="text-justify">{t('address3')}</p>
+              <p className="text-justify">{t('address4')}</p>
+              <p className="text-justify">{t('address5')}</p>
             </div>
           </div>
           <div className="border-t border-white flex justify-between items-center py-6 mobile:flex-col-reverse mobile:items-start mobile:gap-[1vw]  tablet:pb-[5vw] mobile:pt-[5vw] mobile:py-[2vw] tablet:mt-[10vw] tablet:items-start">
