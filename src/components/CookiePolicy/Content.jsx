@@ -31,7 +31,7 @@ const Content = () => {
     return (
         <section className='w-screen h-full py-[8%] px-[5vw] overflow-hidden dark bg-white' id='cookie-content'>
             <div className=''>
-                <div className='content mobile:py-[7vw] text-justify' >{t('heroSub')}</div>
+                <div className='content mobile:py-[7vw] ' >{t('heroSub')}</div>
                 <span className='bg-black1 w-full h-[1px] block mb-[5vw] mt-[8vw] lineDraw mobile:my-[10vw]  tablet:my-[5vw]' />
                 <div className='space-y-[4vw] w-full'>
                     {content.map((item, index) => (
@@ -44,14 +44,14 @@ const Content = () => {
                                 <div className='w-full mobile:w-[80%] '>
                                     <div className='heading-2 pb-[1vw] mobile:pb-[5vw] tablet:pb-[5vw] '>{item.title}</div>
                                     {item.para && item.para.map((text, index) => (
-                                        <div key={index} className='content text-justify  py-[1vw] mobile:space-y-[5vw] mobile:ml-[-18vw] tablet:space-y-[4vw] cookie 'dangerouslySetInnerHTML={{__html:text}} />
+                                        <div key={index} className='content   py-[1vw] mobile:space-y-[5vw] mobile:ml-[-18vw] tablet:space-y-[4vw] cookie 'dangerouslySetInnerHTML={{__html:text}} />
                                     ))}
                                     {item.list1 && item.list1.map((items, index) => (
                                         <div key={index} className='space-y-[1.5vw] pl-[5vw] pt-[3vw]'>
-                                            <div className='text-[2.5vw] text-justify mobile:text-[5vw] font-display mobile:space-y-[5vw] mobile:ml-[-18vw] tablet:space-y-[4vw] cookie '>
+                                            <div className='text-[2.5vw]  mobile:text-[5vw] font-display mobile:space-y-[5vw] mobile:ml-[-18vw] tablet:space-y-[4vw] cookie '>
                                                 {items.title}
                                             </div>
-                                            <div className='content text-justify mobile:space-y-[5vw] mobile:ml-[-18vw] tablet:space-y-[4vw]  cookie'>
+                                            <div className='content  mobile:space-y-[5vw] mobile:ml-[-18vw] tablet:space-y-[4vw]  cookie'>
                                                 {items.detail}
                                             </div>
                                         </div>
@@ -59,7 +59,7 @@ const Content = () => {
                                     <ul className='list-disc pl-[5vw] '>
                                         {item.list2 && item.list2.map((items, index) => (
                                             <li key={index} className='pt-[1vw]'>
-                                                <div className='content text-justify  mobile:space-y-[5vw] mobile:ml-[-18vw] tablet:space-y-[4vw]  cookie mobile:text-left tablet:text-left' dangerouslySetInnerHTML={{__html:items.detail}}/>
+                                                <div className='content   mobile:space-y-[5vw] mobile:ml-[-18vw] tablet:space-y-[4vw]  cookie mobile:text-left tablet:text-left' dangerouslySetInnerHTML={{__html:items.detail}}/>
                                                     
                                             </li>
                                         ))}

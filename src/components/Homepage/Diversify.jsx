@@ -45,7 +45,7 @@ const Diversify = () => {
                     <div className=" content space-y-[3vw] pr-[4.5vw]   mb-[3vw] rtl:pr-0">
                         <div className=" content  space-y-[1vw] mobile:space-y-[8vw]" />
                         {diversify.map((item, index) => (
-                            <p data-para-anim key={index} className="text-justify">{item.text}</p>
+                            <p data-para-anim key={index} className="">{item.text}</p>
                         ))}
                     </div>
                       <LineButton text={t('diversifyCta')} href="/invest-with-us" className="fadein " prefetch={false}/>

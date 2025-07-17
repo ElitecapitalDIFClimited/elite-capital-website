@@ -41,7 +41,7 @@ const Team = () => {
                       <p className="text-[2.5vw] leading-[1.2] font-display mobile:text-[7.8vw] tablet:text-[4.5vw]">
                         {item.name}
                       </p>
-                      <p className="h-[5vw] text-justify mobile:text-[3.8vw] tablet:text-[2.5vw] text-[1.4vw] mobile:h-fit ">
+                      <p className="h-[5vw]  mobile:text-[3.8vw] tablet:text-[2.5vw] text-[1.4vw] mobile:h-fit ">
                         {item.des}
                       </p>
                     </div>
@@ -59,7 +59,7 @@ const Team = () => {
                                 "polygon(0 0, 100% 0%, 70% 100%, 0% 100%)",
                             }}
                           ></span>
-                          <p className="text-[1.2vw] w-[80%] text-justify mobile:text-[3.5vw] tablet:text-[2vw] mobile:leading-[1.6]">
+                          <p className="text-[1.2vw] w-[80%]  mobile:text-[3.5vw] tablet:text-[2vw] mobile:leading-[1.6]">
                             {list}
                           </p>
                         </div>

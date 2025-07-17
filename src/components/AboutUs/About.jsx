@@ -31,7 +31,7 @@ const About = () => {
 
                     <div className="text-black1 w-full  px-[5vw] py-[3vw]  mobile:w-full mobile:space-y-[5vw] mobile:px-[5vw]">
                         <h2 data-title-anim className="text-[4.6vw] font-display leading-1.15  mb-[2vw] mobile:text-[12.5vw] tablet:text-[7vw]">{t('aboutHead')}</h2>
-                        <p data-para-anim className="mb-[3vw] w-[98%] text-justify content mobile:text-[4.1vw] mobile:leading-[1.7] tablet:pl-[1vw]">{t('aboutSub')}</p>
+                        <p data-para-anim className="mb-[3vw] w-[98%] content mobile:text-[4.1vw] mobile:leading-[1.7] tablet:pl-[1vw]">{t('aboutSub')}</p>
                     </div>
                 </div>
             </section>

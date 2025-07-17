@@ -34,7 +34,7 @@ const Advantage = () => {
                     <h2 data-title-anim className="heading-1  mb-[5vw] mobile:mb-[8vw]">{t('advantageHead')}</h2>
                     <div className=" content  space-y-[2vw] pr-[4.5vw]   mb-[5vw] mobile:space-y-[4vw] rtl:pr-0">
                         {advantage.map((item, index) => (
-                            <p data-para-anim key={index} className="text-justify">{item.text}</p>
+                            <p data-para-anim key={index} className="">{item.text}</p>
                         ))}
                     </div>
                     <LineButton text={t('advantageCta')} href="/invest-with-us" className="fadein text-white" prefetch={false}/>

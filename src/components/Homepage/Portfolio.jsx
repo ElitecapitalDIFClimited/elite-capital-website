@@ -159,7 +159,7 @@ export default function SwiperSlider() {
         <h2 className="slide__heading text-[4.5vw] font-display leading-[1.2] mb-[1.5vw] mobile:text-[10vw] mobile:mb-6 tablet:text-[7vw]">
           {t("portfolioHead")}
         </h2>
-        <p className="slide__text text-justify   mobile:text-[4.1vw] w-[40%] mobile:w-[80%] mobile:tracking-wider tablet:text-[2.5vw]">
+        <p className="slide__text    mobile:text-[4.1vw] w-[40%] mobile:w-[80%] mobile:tracking-wider tablet:text-[2.5vw]">
           {t("portfolioSub")}
         </p>
       </div>

@@ -143,7 +143,7 @@ const MobileSwiper = ({ members }) => {
                   {firstHalf.map((feature, i) => (
                     <p
                       key={i}
-                      className="text-[1.3vw] tablet:text-[2.5vw] text-justify  mobile:text-[4.1vw]"
+                      className="text-[1.3vw] tablet:text-[2.5vw]   mobile:text-[4.1vw]"
                     >
                       {feature}
                     </p>
@@ -154,7 +154,7 @@ const MobileSwiper = ({ members }) => {
                     {secondHalf.map((feature, i) => (
                       <p
                         key={i}
-                        className="text-[1.3vw] leading-[1.5] tablet:text-[2.5vw] text-justify  mobile:text-[4.1vw]"
+                        className="text-[1.3vw] leading-[1.5] tablet:text-[2.5vw]   mobile:text-[4.1vw]"
                       >
                         {feature}
                       </p>
@@ -231,7 +231,7 @@ const TeamAccordion = ({ members }) => {
                 {item.des}
               </p>
 
-              <div className="space-y-[1vw] pt-[1vw] text-justify">
+              <div className="space-y-[1vw] pt-[1vw] ">
                 {firstHalf.map((feature, i) => (
                   <p
                     key={i}
@@ -246,7 +246,7 @@ const TeamAccordion = ({ members }) => {
                 {secondHalf.map((feature, i) => (
                   <p
                     key={i}
-                    className="text-[1.3vw] text-justify leading-[1.5] tablet:text-[2.5vw]"
+                    className="text-[1.3vw]  leading-[1.5] tablet:text-[2.5vw]"
                   >
                     {feature}
                   </p>

@@ -105,7 +105,7 @@ const Hero = ({ img, translation, heading, para, nextSectionId }) => {
               {heading}
             </h1>
             {para && (
-              <p className="text-[1.56vw] text-justify mb-[3vw] w-[70%] mobile:text-[4.1vw] mobile:w-full hero-para-anim tablet:text-[3vw] mobile:leading-[1.6]">
+              <p className="text-[1.56vw]  mb-[3vw] w-[70%] mobile:text-[4.1vw] mobile:w-full hero-para-anim tablet:text-[3vw] mobile:leading-[1.6]">
                 {para}
               </p>
             )}
