@@ -30,7 +30,7 @@ const Stats = () => {
           scale: 1.3,
           ease: "none",
           scrollTrigger: {
-            trigger: "#new-stats",
+            trigger: "#counter-invest",
             start: "top bottom",
             end: "bottom top",
             scrub: true
@@ -43,7 +43,7 @@ const Stats = () => {
 
   return (
     <>
-      <section className="relative bg-[#F4F4F4] h-[40vw] overflow-hidden  mobile:pb-[10%] tablet:pb-[7%] mobile:h-full dark tablet:h-full" id="new-stats">
+      <section id="counter-invest" className="relative bg-[#F4F4F4] h-[40vw] overflow-hidden  mobile:pb-[10%] tablet:pb-[7%] mobile:h-full dark tablet:h-full" >
         <div className="flex items-center justify-between h-full mobile:flex-col tablet:flex-col">
           <div className="w-1/2  h-full overflow-hidden mobile:w-full mobile:h-[100vw] tablet:h-[70vw] tablet:w-full">
             <Image
@@ -119,19 +119,23 @@ const Stats = () => {
 export default Stats;
 
 function DigitScroller({ digit, duration = 2 }) {
-  const containerRef = useRef();
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    const digitIndex = parseInt(digit, 10);
-    gsap.to(containerRef.current, {
-      y: `-${digitIndex * 10}%`,
-      duration,
-      ease: "power1.out",
-      scrollTrigger: {
-        trigger: "#new-stats",
-        start: "top 80%",
-      }
+    const ctx = gsap.context(() => {
+      gsap.to(containerRef.current, {
+        y: `-${parseInt(digit, 10) * 10}%`,
+        duration,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: "#counter-invest",
+          start: "top 80%",
+          // markers: true,
+        },
+      });
     });
+
+    return () => ctx.revert();
   }, [digit, duration]);
 
   return (
