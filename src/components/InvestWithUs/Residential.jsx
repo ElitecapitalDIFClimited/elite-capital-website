@@ -13,7 +13,7 @@ const Residential = () => {
         <section className="bg-[#FFFFFF] overflow-hidden py-[5vw] pb-[7vw] mobile:py-[15%] dark tablet:py-[7vw]">
             <div className="flex items-center">
                 <div className="text-black1  pl-[4vw] pr-[3.5vw] mobile:space-y-[5vw]">
-                    <h2 data-title-anim className="text-[4.5vw] font-display mb-[2vw] leading-[1.2] mobile:text-[12.5vw] mobile:mb-[7vw]  mobile:leading-[1.2] tablet:text-[7vw]">{t('residentialHead')}</h2>
+                    <h2 data-title-anim className="text-[4.5vw] font-display mb-[2vw] leading-[1.2] mobile:text-[12.5vw] mobile:mb-[7vw]  mobile:leading-[1.2] tablet:text-[7vw] rtl:w-[70%] rtl:mobile:w-full rtl:tablet:w-full">{t('residentialHead')}</h2>
                     <p data-para-anim className="w-[95%] content  mobile:text-[4.2vw] mobile:leading-[1.6]">{t('residentialPara')}</p>
                     <h2 data-title-anim className="text-[4.5vw] font-display tracking-tight mobile:text-[12.5vw]  pt-[7vw] mb-[1vw]  mobile:leading-[1.2] tablet:text-[7vw]">{t('residentialSub')}</h2>
                     <p data-para-anim className="w-[98%] content  mobile:text-[4.2vw] pb-[5vw] mobile:leading-[1.6]">{t('residentialSub2')}</p>
