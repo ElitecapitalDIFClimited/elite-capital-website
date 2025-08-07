@@ -73,33 +73,33 @@
     "portfolio": [
         {
             "image": "/assets/images/homepage/rymal-portfolio-1.png",
-            "text1": "81-87 ريمال",
-            "text2": "هاميلتون، أونتاريو"
+            "text1": "81-87 Rymal",
+            "text2":"Hamilton, ON"
         },
         {
             "image": "/assets/images/homepage/ottawa-portfolio.png",
-            "text1": "570 أبر أوتاوا",
-            "text2": "هاميلتون، أونتاريو"
+            "text1": "570 Upper Ottawa",
+            "text2": "Hamilton, ON"
         },
         {
             "image": "/assets/images/homepage/station-portfolio.png",
-            "text1": "ماركت 60",
-            "text2": "برانتفورد، أونتاريو"
+            "text1": "60 Market",
+            "text2": "Brantford, ON"
         },
         {
             "image": "/assets/images/homepage/niagara-portfolio.png",
-            "text1": "148 نياجارا",
-            "text2": "هاميلتون، أونتاريو"
+            "text1": "148 Niagara",
+            "text2": "Hamilton, ON"
         },
         {
             "image": "/assets/images/homepage/avenue-portfolio.png",
-            "text1": " فورث أفينيو - المرحلة 1",
-            "text2": "سانت كاثرينز، أونتاريو"
+            "text1": "4th Avenue - Phase 1",
+            "text2": "St. Catharines, ON"
         },
         {
             "image": "/assets/images/homepage/meridian-portfolio.png",
-            "text1": "120 طريق ميريديان",
-            "text2": "بيلهام، أونتاريو"
+            "text1": "120 Meridian Way",
+            "text2": "Pelham, ON"
         }
     ],
     "contactHead": "استثمر معنا",
