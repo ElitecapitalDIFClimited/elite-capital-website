@@ -33,7 +33,7 @@ const BoardofDirectorsCopy = () => {
 
   return (
     <>
-      <section className="w-screen h-full bg-[#ffffff]  pb-[5vw] mobile:overflow-hidden mobile:space-y-[8vw] tablet:pb-[7%] pt-[7vw]">
+      <section className="w-screen h-full bg-[#ffffff]  pb-[5vw] mobile:overflow-hidden mobile:space-y-[8vw] tablet:pb-[7%] pt-[7vw]" id="board-directors">
         <div className=" mobile:space-y-[5vw] ">
           <h2
 
@@ -211,8 +211,9 @@ const TeamAccordion = ({ members }) => {
           <AccordionItem
             key={index}
             value={`item-${index}`}
-            className={`w-full flex gap-[5vw] transition-transform px-[5vw] py-[2vw] tablet:flex-col tablet:pt-[5vw] ${index % 2 === 0 ? "bg-[#BCBCBC]" : ""
+            className={`w-full flex gap-[5vw] transition-transform px-[5vw] py-[2vw] tablet:flex-col tablet:pt-[5vw]  ${index % 2 === 0 ? "bg-[#BCBCBC]" : ""
               }`}
+             id={item.name.split(" ")[0]}
           >
             <div className="h-[28vw] w-[22vw] rounded-[1.2vw] overflow-hidden group transition-all duration-500 ease tablet:h-[40vw] tablet:w-[30vw]">
               <Image
