@@ -56,5 +56,7 @@
   "formEmailError":"عنوان البريد الإلكتروني غير صالح.",
   "formPhoneError":"رقم الهاتف غير صالح",
   "formCompanyError":"اسم الشركة مطلوب.",
-  "formDesignationError":"التعيين مطلوب."
+  "formDesignationError":"التعيين مطلوب.",
+  "formSubmitting":"تقديم..."
+
 }

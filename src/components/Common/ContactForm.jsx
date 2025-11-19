@@ -261,7 +261,7 @@ export default function ContactForm() {
                     </div>
                   ) : (
                     <span className="text-[1.1vw] mobile:text-[4.5vw] tablet:text-[2.5vw]">
-                      Submitting..
+                     {t("formSubmitting")}
                     </span>
                   )}
                 </Button>
@@ -269,11 +269,12 @@ export default function ContactForm() {
               {/* Status message */}
               {statusMessage && (
                 <p
+                dir="ltr"
                   className={`
                     ${statusType === "error"
                       ? "mt-2 text-red-600"
                       : "mt-2 text-green-600"
-                  } text-lg `}
+                  } text-lg text-left  rtl:text-right`}
                 >
                   {statusMessage}
                 </p>

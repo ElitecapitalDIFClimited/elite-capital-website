@@ -55,6 +55,7 @@
   "formDesignationError":"Designation is required.",
   "formMessage": "Message",
   "formcta": "Submit",
+  "formSubmitting":"Submitting...",
   "errorSub": "This page does not exist.",
   "errorCta": "Go back to Homepage"
 }
