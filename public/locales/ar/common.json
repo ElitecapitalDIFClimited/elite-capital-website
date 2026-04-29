@@ -2,7 +2,7 @@
   "contactHead": "استثمر معنا",
   "contactSub": "تواصل معنا لمعرفة المزيد حول فرصنا الاستثمارية.",
   "home": "الرئيسية",
-  "footerCopy": "حقوق النشر (©) 2025 جميع الحقوق محفوظة. إيليت كابيتال (DIFC) ليمتد.",
+  "footerCopy": "حقوق النشر (©) 2026 جميع الحقوق محفوظة. إيليت كابيتال (DIFC) ليمتد.",
   "footerEmail": "Subscribe for our Newsletter to Receive Updates and Content.",
   "footerEmailText": "Enter Your Email",
   "footerEmailButton": "Subscribe",
@@ -43,7 +43,7 @@
       "link": "/cookie-policy"
     }
   ],
-  "formName": "الاسم بالكامل*",
+   "formName": "الاسم بالكامل*",
   "formEmail": "البريد الإلكتروني*",
   "formPhone": "رقم الهاتف*",
   "formCompany": "اسم الشركة*",
@@ -58,5 +58,4 @@
   "formCompanyError":"اسم الشركة مطلوب.",
   "formDesignationError":"التعيين مطلوب.",
   "formSubmitting":"تقديم..."
-
 }

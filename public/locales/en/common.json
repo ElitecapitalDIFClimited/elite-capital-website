@@ -43,7 +43,7 @@
       "link": "/cookie-policy"
     }
   ],
-  "formName": "Full name*",
+"formName": "Full name*",
   "formNameError":"Name must be at least 3 characters.",
   "formEmail": "Email*",
   "formEmailError":"Invalid email address.",
@@ -55,7 +55,7 @@
   "formDesignationError":"Designation is required.",
   "formMessage": "Message",
   "formcta": "Submit",
-  "formSubmitting":"Submitting...",
+   "formSubmitting":"Submitting...",
   "errorSub": "This page does not exist.",
   "errorCta": "Go back to Homepage"
 }

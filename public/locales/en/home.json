@@ -48,10 +48,10 @@
     "advantageHead": "Canada's real estate investment opportunity",
     "advantage": [
         {
-            "text": "Canada stands out as an attractive G7 investment destination due to its stable economy, abundance of natural resources, AAA credit rating and rapidly rising population. The population is expected to grow by 11.6 million people by 2050, driving sustained demand across key sectors - particularly housing."
+            "text": "Canada stands out as an attractive G7 investment destination due to its stable economy, abundance of natural resources, top-tier sovereign credit rating (Aaa/AAA from Moody's and S&P), and strong long-term fundamentals.Canada's population is projected to grow substantially in the coming decades, reaching between 50 and 60 million by 2050 under Statistics Canada's medium-growth scenario (2026), driving sustained long-term demand across key sectors - particularly housing."
         },
         {
-            "text": "Rapid population growth, combined with a projected shortfall of over 3.5 million homes by 2030, has created a supply gap and presents a compelling and long-term opportunity for residential real estate investment in Canada."
+            "text": "Canada's residential real estate market is underpinned by persistent structural demand that continues to outpace supply by a significant margin. According to the Canada Mortgage and Housing Corporation (CMHC), Canada faces a housing supply gap of approximately 2.3 million homes by 2035 - one of the most acute affordability challenges in the G7 - creating a durable, long-term investment opportunity in purpose-built residential development."
         }
     ],
     "advantageCta": "View more",
@@ -74,9 +74,9 @@
         {
             "image": "/assets/images/homepage/rymal-portfolio-1.png",
             "text1": "81-87 Rymal",
-            "text2":"Hamilton, ON"
+            "text2": "Hamilton, ON"
         },
-        {
+         {
             "image": "/assets/images/homepage/brant.png",
             "text1": "688 Brant",
             "text2": "Burlington, ON"
